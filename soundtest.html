@@ -1,0 +1,12 @@
+<audio id="simple"></audio>
+<button onclick="play('horse.wav')">Horse</button>
+<button onclick="play('cow.wav')">Cow</button>
+<button onclick="play('pig.wav')">Pig</button>
+<button onclick="play('chicken.wav')">Chicken</button>
+<script>
+    function play(sound){
+    var audio = document.getElementById("simple");
+    audio.setAttribute('src', sound);
+    audio.play();
+}
+</script>
